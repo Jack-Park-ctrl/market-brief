@@ -1,0 +1,16 @@
+{
+  "style": "균형",
+  "market": "혼합",
+  "period": "중기",
+  "stocks": [
+    { "name": "삼성전자", "ticker": "005930", "market": "KR" },
+    { "name": "SK하이닉스", "ticker": "000660", "market": "KR" },
+    { "name": "NVIDIA",    "ticker": "NVDA",   "market": "US" },
+    { "name": "Apple",     "ticker": "AAPL",   "market": "US" }
+  ],
+  "auto_pick": {
+    "enabled": true,
+    "count": 2,
+    "theme": "AI 반도체 및 2차전지 섹터 위주로 선별"
+  }
+}

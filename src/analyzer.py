@@ -60,7 +60,7 @@ def analyze_stock(stock: dict, style: str, period: str) -> str:
     )
 
     response = client.messages.create(
-        model="claude-sonnet-4-20250514",
+        model="claude-sonnet-4-6",
         max_tokens=2000,
         system=SKILL_SYSTEM_PROMPT,
         messages=[{"role": "user", "content": prompt}],
@@ -87,7 +87,7 @@ def run_auto_pick(theme: str, count: int, style: str) -> str:
     )
 
     response = client.messages.create(
-        model="claude-sonnet-4-20250514",
+        model="claude-sonnet-4-6",
         max_tokens=3000,
         system=SKILL_SYSTEM_PROMPT,
         messages=[{"role": "user", "content": prompt}],

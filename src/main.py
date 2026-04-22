@@ -5,6 +5,7 @@ watchlist.json을 읽고 → 분석 수행 → 이메일 발송
 """
 
 import json
+import time
 import sys
 from pathlib import Path
 
@@ -34,6 +35,7 @@ def main() -> None:
         print(f"  → {stock['name']} ({stock['ticker']}) 분석 중...")
         try:
             content = analyze_stock(stock, style, period)
+            time.sleep(30)
             analyses.append({
                 "label":   f"{stock['name']} ({stock['ticker']})",
                 "content": content,

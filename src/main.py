@@ -35,7 +35,7 @@ def main() -> None:
         print(f"  → {stock['name']} ({stock['ticker']}) 분석 중...")
         try:
             content = analyze_stock(stock, style, period)
-            time.sleep(30)
+            time.sleep(60)
             analyses.append({
                 "label":   f"{stock['name']} ({stock['ticker']})",
                 "content": content,
